@@ -106,5 +106,39 @@ public class citySimTest {
 		assertEquals(nextMove,3);
 	}
 	
+	//test Via when moving along fourth avenue
+	public testFourthAvenue(){
+		Driver mockDriver = mock(Driver.class);
+		when(mockDriver.getCurrent()).thenReturn(0);
+		when(mockDriver.getNext()).thenReturn(1);
+		String via = via(mockDriver);
+		assertEquals(via,"Fourth Avenue");
+	}
 	
+	//test Via when moving along fifth avenue
+	public testFourthAvenue(){
+		Driver mockDriver = mock(Driver.class);
+		when(mockDriver.getCurrent()).thenReturn(5);
+		when(mockDriver.getNext()).thenReturn(4);
+		String via = via(mockDriver);
+		assertEquals(via,"Fifth Avenue");
+	}
+	
+	//test Via when moving along chirp street
+	public testFourthAvenue(){
+		Driver mockDriver = mock(Driver.class);
+		when(mockDriver.getCurrent()).thenReturn(1);
+		when(mockDriver.getNext()).thenReturn(5);
+		String via = via(mockDriver);
+		assertEquals(via,"Chirp Street");
+	}
+	
+	//test Via when moving along meow street
+	public testFourthAvenue(){
+		Driver mockDriver = mock(Driver.class);
+		when(mockDriver.getCurrent()).thenReturn(0);
+		when(mockDriver.getNext()).thenReturn(4);
+		String via = via(mockDriver);
+		assertEquals(via,"Meow Street");
+	}
 }

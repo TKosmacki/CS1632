@@ -3,7 +3,8 @@ package citySim9000;
 public class Driver {
 	int current;
 	int next;
-	
+	public static void main(){
+	}
 	public Driver(){
 		this.current = -1;
 		this.next = -1;

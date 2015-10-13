@@ -13,6 +13,7 @@
 package citySim9000;
 
 import java.util.Random;
+import java.lang.String;
 
 public class citySim9000 {
 	public static void main(String[] args) {
@@ -41,6 +42,10 @@ public class citySim9000 {
 				
 				driver.setNext(nextMove);
 				String via = via(driver);
+				if (via.equals("Error")){
+					System.out.println("Error in via().");
+					System.exit(-3);
+				}
 				System.out.println("Driver " + i + " heading from " + locations[driver.getCurrent()] + " to " + locations[nextMove] + " via " + via + ".");
 				driver.setCurrent(nextMove);
 				turn++;
@@ -79,10 +84,13 @@ public class citySim9000 {
 		if ((loc == 1 && nextMove == 5) || (loc == 5 && nextMove == 1)){
 			return "Chirp Street";
 		}
-		if (loc<3 && nextMove <3){
+		if ((loc<3 && nextMove <3 && nextMove > loc) || (loc == 2 && nextMove == 0)){
 			return "Fourth Avenue";
 		}
-		return "Fifth Avenue";
+		if((loc>=3 && nextMove >=3 && nextMove< loc) || (loc == 3 && nextMove == 5)){
+			return "Fifth Avenue";
+		}
+		return "Error";
 	}
 	
 	public static int nextMove(int rand,Driver driv,int turn){
