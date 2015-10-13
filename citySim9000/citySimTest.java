@@ -2,6 +2,7 @@ package citySim9000;
 
 import static org.mockito.Mockito.*;
 import static org.junit.Assert.*;
+
 public class citySimTest {
 	
 	//test handle args with no args provided
