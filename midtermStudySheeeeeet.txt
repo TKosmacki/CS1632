@@ -1,0 +1,135 @@
+CS 1632 Midterm Exam Study Guide
+Fall 2015
+
+The midterm will cover everything we have covered up to the lecture of 15 OCT 2015.
+
+However, here are the key topics to study in preparation for the test.
+
+TESTING THEORY AND TERMINOLOGY
+
+Equivalence class partitioning
+Boundary and "interior" values
+Base, Edge, and Corner cases
+
+Static vs Dynamic testing - static no code is executed just simply looking at code, requirements, 
+and design documents to find errors
+Know the differences and examples of each
+
+Black/White/Grey box testing
+black box- know nothing; white box-know everything; grey box- access to design documents but nothing
+about internal functionality
+Know the differences and examples of each
+
+REQUIREMENTS ANALYSIS
+
+What makes a good or bad requirement?
+Testability - requirements must be:
+Complete, consistent, unambiguous, quantitative, feasible
+
+Functional Requirements vs Non-Functional (Quality Attributes)
+functional requirements are about what a system should do and non functional are about what a system
+should be
+
+Be able to define and write your own
+Traceability Matrices
+
+Be able to define and write your own
+TEST PLANS
+preconditions-> input values -> execution steps -> output values -> postconditions
+
+Terminology: test cases, test plans, test suites, test runs
+The Seven Testing Principles
+You don't need to remember their names, but use them in developing test plans
+Verification vs validation
+verification is making the system correctly
+validation is making the right system
+
+DEFECT REPORTING
+
+Be prepared to report a defect based on a test case
+Remember the defect template:
+SUMMARY, DESCRIPTION, REPRODUCTION STEPS, EXPECTED BEHAVIOR, OBSERVED BEHAVIOR
+Optionally: SEVERITY/IMPACT, NOTES
+Levels of severity: BLOCKER, CRITICAL, MAJOR, NORMAL, MINOR, TRIVIAL
+blocker is mission critical and must be immediately addressed, program breaking, system unusable
+critical- unsuable or unsafe with a workaround
+major- serious probelm with workaround or system barely usable with no workaround
+normal - small issue to the user
+minor - annoyance
+trivial - user would never notice unless they are looking for exactly that
+
+Enhancements vs defects
+enhancements may not be specified in the requirements, but must not disobey a requirement
+defects problems dealing with requirement specifications
+Be prepared to argue if something is a defect or enhancement
+
+Coding mistakes vs defects
+
+AUTOMATED TESTING
+
+Pros and cons of automated testing
+pros: quick, can be more extensive than manual tests
+cons: 
+
+Unit tests vs system/acceptance/integration tests
+Writing automated tests:
+PRECONDITIONS, POSTCONDITIONS, EXECUTION STEPS, INPUT/OUTPUT VALUES
+
+UNIT TESTING
+
+Be prepared to write some unit tests in JUnit
+
+Pay special attention to assertions
+
+Stubs, test doubles, mocks, and verification
+
+Be able to explain code coverage and what it's good for/not good for
+
+WRITING TESTABLE CODE
+
+Basic strategies for testable code
+The DRY Principle- dont repeat yourself, copy and pasting code throughout your project is not good, if this
+is happening turn the code into a function/method if possible.
+
+The SOLID Principles- 
+Single Responsibility- classes should only have one resposibility, if you cant describe the class without
+saying and it probably violates this
+Open/Closed- Classes should be open to extension but closed to modification, add features by using subclasses
+not code. Modification should only occur to fix defects
+Liskov Substitution- subclasses of classes should implement any method while meeting all invariants
+squares and rectangles are different, can mock without fear of casuing issues
+Interface Segregation- Clients should not depend on methods they do not use
+Dependency Inversion- 
+
+The Law of Demeter- 
+
+TDD
+
+The red-green-refactor loop - make it green then make it clean
+Principles of TDD:
+
+YAGNI, KISS, "Fake it 'til you make it", Avoid interdependency, avoid slow tests
+you aint gonna needit, keep it simple stupid, even if you need to return a constant to pass a test do it,
+then fix later, test shouldnt rely upon other tests results, slow tests arent good
+
+Benefits and drawbacks of TDD
+Pros: creates a test suite as you go
+Cons: if the project is rather trivial or short tdd may add more overhead than is necessary
+	  purely focuses on 
+
+Testing private methods (you won't need to use reflection, but remember why/why not one might not test them)
+
+BDD
+
+Be able to define it
+Understand and be able to use the Connextra template and Gherkin syntax.
+As a, I want, So That
+Be prepared to write out Gherkin feature files in the appropriate format??
+Be able to create user stories/scenarios
+How to use automated tests
+
+WEB TESTING
+
+Be able to explain how you would test a web page with Selenium
+You do NOT need to know Selenese (Selenium scripting language)
+Be able to discuss issues with testing web apps (page loading timing issues, javascript issues, etc)
