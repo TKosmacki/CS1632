@@ -76,9 +76,9 @@ public class UserStory3 {
 		driver.findElement(By.xpath("(//a[contains(text(),'log in')])[2]")).click();
 		driver.findElement(By.id("email")).click();
 		driver.findElement(By.id("email")).clear();
-		driver.findElement(By.id("email")).sendKeys("elf62@pitt.edu");
+		driver.findElement(By.id("email")).sendKeys("efriedman92@gmail.com");
 		driver.findElement(By.id("password")).clear();
-		driver.findElement(By.id("password")).sendKeys("Eliandtyler1");
+		driver.findElement(By.id("password")).sendKeys("elifr123");
 		driver.findElement(By.id("submit-button")).click();
 		driver.findElement(By.id("submit-button")).click();
 		driver.findElement(By.cssSelector("td.col1 > input[name=\"q\"]")).click();
