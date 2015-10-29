@@ -1,0 +1,18 @@
+import junit.framework.Test;
+import junit.framework.TestSuite;
+
+public class US2 {
+
+  public static Test suite() {
+    TestSuite suite = new TestSuite();
+    suite.addTestSuite(scenerio 1.class);
+    suite.addTestSuite(scenerio 2.class);
+    suite.addTestSuite(scenerio 3.class);
+    suite.addTestSuite(scenerio 4.class);
+    return suite;
+  }
+
+  public static void main(String[] args) {
+    junit.textui.TestRunner.run(suite());
+  }
+}
