@@ -121,6 +121,15 @@ public class UserStory1 {
 	@Test
 	public void testAnswers() throws Exception {
 		driver.get(baseUrl + "/");
+		driver.findElement(By.xpath("(//a[contains(text(),'log in')])[2]")).click();
+		driver.findElement(By.xpath("(//a[contains(text(),'log in')])[2]")).click();
+		driver.findElement(By.id("email")).click();
+		driver.findElement(By.id("email")).clear();
+		driver.findElement(By.id("email")).sendKeys("elf62@pitt.edu");
+		driver.findElement(By.id("password")).clear();
+		driver.findElement(By.id("password")).sendKeys("Eliandtyler1");
+		driver.findElement(By.id("submit-button")).click();
+		driver.findElement(By.id("submit-button")).click();
 		driver.findElement(By.cssSelector("img.avatar-me.js-avatar-me")).click();
 		driver.findElement(By.cssSelector("img.avatar-me.js-avatar-me")).click();
 		// Warning: assertTextPresent may require manual changes
@@ -135,6 +144,15 @@ public class UserStory1 {
 	@Test
 	public void testQuestions() throws Exception {
 		driver.get(baseUrl + "/");
+		driver.findElement(By.xpath("(//a[contains(text(),'log in')])[2]")).click();
+		driver.findElement(By.xpath("(//a[contains(text(),'log in')])[2]")).click();
+		driver.findElement(By.id("email")).click();
+		driver.findElement(By.id("email")).clear();
+		driver.findElement(By.id("email")).sendKeys("elf62@pitt.edu");
+		driver.findElement(By.id("password")).clear();
+		driver.findElement(By.id("password")).sendKeys("Eliandtyler1");
+		driver.findElement(By.id("submit-button")).click();
+		driver.findElement(By.id("submit-button")).click();
 		driver.findElement(By.cssSelector("img.avatar-me.js-avatar-me")).click();
 		driver.findElement(By.cssSelector("img.avatar-me.js-avatar-me")).click();
 		// Warning: assertTextPresent may require manual changes
@@ -149,6 +167,15 @@ public class UserStory1 {
 	@Test
 	public void testReputation() throws Exception {
 		driver.get(baseUrl + "/");
+		driver.findElement(By.xpath("(//a[contains(text(),'log in')])[2]")).click();
+		driver.findElement(By.xpath("(//a[contains(text(),'log in')])[2]")).click();
+		driver.findElement(By.id("email")).click();
+		driver.findElement(By.id("email")).clear();
+		driver.findElement(By.id("email")).sendKeys("elf62@pitt.edu");
+		driver.findElement(By.id("password")).clear();
+		driver.findElement(By.id("password")).sendKeys("Eliandtyler1");
+		driver.findElement(By.id("submit-button")).click();
+		driver.findElement(By.id("submit-button")).click();
 		driver.findElement(By.cssSelector("img.avatar-me.js-avatar-me")).click();
 		driver.findElement(By.cssSelector("img.avatar-me.js-avatar-me")).click();
 		// Warning: assertTextPresent may require manual changes
@@ -163,6 +190,15 @@ public class UserStory1 {
 	@Test
 	public void testEditProfile() throws Exception {
 		driver.get(baseUrl + "/");
+		driver.findElement(By.xpath("(//a[contains(text(),'log in')])[2]")).click();
+		driver.findElement(By.xpath("(//a[contains(text(),'log in')])[2]")).click();
+		driver.findElement(By.id("email")).click();
+		driver.findElement(By.id("email")).clear();
+		driver.findElement(By.id("email")).sendKeys("elf62@pitt.edu");
+		driver.findElement(By.id("password")).clear();
+		driver.findElement(By.id("password")).sendKeys("Eliandtyler1");
+		driver.findElement(By.id("submit-button")).click();
+		driver.findElement(By.id("submit-button")).click();
 		driver.findElement(By.cssSelector("img.avatar-me.js-avatar-me")).click();
 		driver.findElement(By.cssSelector("img.avatar-me.js-avatar-me")).click();
 		driver.findElement(By.linkText("Edit Profile & Settings")).click();

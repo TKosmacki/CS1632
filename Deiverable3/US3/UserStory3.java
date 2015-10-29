@@ -55,6 +55,15 @@ public class UserStory3 {
 	@Test
 	public void testPopularitySorts() throws Exception {
 		driver.get(baseUrl + "/");
+		driver.findElement(By.xpath("(//a[contains(text(),'log in')])[2]")).click();
+		driver.findElement(By.xpath("(//a[contains(text(),'log in')])[2]")).click();
+		driver.findElement(By.id("email")).click();
+		driver.findElement(By.id("email")).clear();
+		driver.findElement(By.id("email")).sendKeys("elf62@pitt.edu");
+		driver.findElement(By.id("password")).clear();
+		driver.findElement(By.id("password")).sendKeys("Eliandtyler1");
+		driver.findElement(By.id("submit-button")).click();
+		driver.findElement(By.id("submit-button")).click();
 		driver.findElement(By.cssSelector("#hlogo > a")).click();
 		driver.findElement(By.cssSelector("#hlogo > a")).click();
 		assertTrue(isElementPresent(By.linkText("interesting")));
